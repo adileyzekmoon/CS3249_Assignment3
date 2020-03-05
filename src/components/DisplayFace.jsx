@@ -41,9 +41,34 @@ coolingMode = () =>{
     }
 }
 
+circleColor(){
+    if (this.state.coolingMode == "cooling"){
+        return(
+            <svg height="100" width="100">
+                <circle cx="50" cy="50" r="40" stroke="grey" stroke-width="3" fill="blue" />
+            </svg>
+        )
+    }
+    else if (this.state.coolingMode == "heating"){
+        return(
+            <svg height="100" width="100">
+                <circle cx="50" cy="50" r="40" stroke="grey" stroke-width="3" fill="red" />
+            </svg>
+        )
+    }
+    else if (this.state.coolingMode == "off"){
+        return(
+            <svg height="100" width="100">
+                <circle cx="50" cy="50" r="40" stroke="grey" stroke-width="3" fill="white" />
+            </svg>
+        )
+    }
+}
+
  render() {
     return(
         <div>
+            {this.circleColor()}
             <h1>Target Temp = {this.state.targetTemperature}</h1>
             <h1>Current Temp = {this.state.currentTemperature}</h1>
             <p>Cooling Mode: {this.state.coolingMode}</p>
