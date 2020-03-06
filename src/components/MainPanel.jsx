@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-
-
-class TextDisplay extends Component {
+class MainPanel extends Component {
+    
+    
   render() {
     return(
     );
   }
 }
 
-export default TextDisplay;
+export default MainPanel;
