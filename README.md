@@ -1,14 +1,9 @@
-CS3249_Assignment3/
-    src/
-        App.jsx
-        thermostatMachine.js
-            State machine using xState
-        view
-            MainPanel.jsx
-                Holds all View and ViewModel functions and components
-        model
-            TemperatureDataModel.js
-                Model for temperature data
+## CS3249_Assignment3/
+thermostatMachine.js - State machine using xState
+## view
+MainPanel.jsx - Holds all View and ViewModel functions and components
+## model
+TemperatureDataModel.js - Model for temperature data
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
